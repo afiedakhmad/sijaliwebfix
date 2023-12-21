@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if ($num_rows == 1) {
             // Jika username dan password cocok, redirect ke halaman sukses atau halaman dashboard
-            header('Location: ../dashboard/dashboard.php');
+            header('Location: ../dashboard/users.php');
             exit();
         } else {
             // Jika username atau password salah, redirect kembali ke halaman login
@@ -36,4 +36,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Tutup koneksi ke database
     mysqli_close($conn);
 }
-?>
